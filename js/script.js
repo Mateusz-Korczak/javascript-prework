@@ -8,6 +8,8 @@ function clearMessages(){
 	document.getElementById('messages').innerHTML = '';
 }
 
+let computerMove = 'kamień';
+
 let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 
 console.log('Gracz wpisał: ' + playerInput);
@@ -26,3 +28,17 @@ else if (playerInput == '3'){
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+
+if( computerMove == 'kamień' && playerMove == 'papier'){
+	printMessage('Ty wygrywasz!');
+  }
+else if (computerMove == 'kamień' && playerMove == 'nożyce' ) {
+	printMessage('Ty przegrywasz!')
+}
+else if (computerMove == 'kamień' && playerMove == 'kamień') {
+	printMessage('Remis!')
+}
+else {
+	printMessage ('Nieznany wynik!')
+}
