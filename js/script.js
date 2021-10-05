@@ -38,9 +38,9 @@ function playGame(playerMove){
 	displayResult(computerMove, playerMove);
 }
 
-  let rockButton = document.getElementById('kamień');
-  let paperButton = document.getElementById('papier');
-  let scissorsButton = document.getElementById('nożyce');
+  const rockButton = document.getElementById('kamień');
+  const paperButton = document.getElementById('papier');
+  const scissorsButton = document.getElementById('nożyce');
   
   rockButton.addEventListener('click', () => {playGame("kamień")});
   paperButton.addEventListener('click', () => {playGame("papier")});
